@@ -8,13 +8,6 @@ const ConanHomeHero = () => (
       className="d-none d-lg-block position-absolute hero-bg"
       alt="Conan C++ Package Manager"
     ></img>
-
-    <Link href="#mktoForm_1479">
-      <div className="btn conan-blue-gradient-bg position-fixed get-involved-btn ps-3 pe-3 d-none d-lg-block">
-        Get involved
-      </div>
-    </Link>
-
     <div className="container py-5">
       <div className="row d-flex justify-content-center">
         <div className="col-6">
@@ -381,9 +374,6 @@ const ConanHomeUsers = () => (
         <div className="col-12 users-flex d-flex justify-content-center align-content-center">
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
             <img className="" src="/brands/company_29.png" alt="Poco"></img>
-          </div>
-          <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img className="" src="/brands/company_27.png" alt="Huawei"></img>
           </div>
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
             <img className="" src="/brands/company_28.png" alt="Pix4D"></img>

@@ -19,8 +19,6 @@ export {
   ConanSearchBar,
   BasicSearchBar,
 } from "./searchbar";
-export type { MarketoProps } from "./useMarketo";
-export { MarketoForm } from "./useMarketo";
 export { SingleUserStory } from "./user-story";
 export {
   truncate,
