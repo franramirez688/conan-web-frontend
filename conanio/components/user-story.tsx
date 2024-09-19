@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { UrlObject } from 'url';
 
 export const SingleUserStory = (props: {
@@ -34,13 +35,13 @@ export const SingleUserStory = (props: {
                 <div className="position-absolute d-none d-lg-block">
                   <div className="download text-center">
                     <div className="image pb-3">
-                      <img
+                      <Image
                         className="img-fluid"
                         alt="Download File"
                         height="405"
                         src={props.downloadFileImgSrc}
                         width="317"
-                      ></img>
+                      ></Image>
                     </div>
                     <Link href={props.downloadFileURL} rel="noopener noreferrer" target="_blank">
                       <div className="btn conan-blue-gradient-bg"> Download </div>
@@ -54,9 +55,9 @@ export const SingleUserStory = (props: {
         <div className="container conancontainer pt-5">
           <div className="col-lg-8">
             <div className="d-flex justify-content-center align-items-center top-together-images">
-              <img alt="Conan" height="115" src="/favicon.png"></img>
+              <Image alt="Conan" height="115" src="/favicon.png"></Image>
               <b><h2>&nbsp;&nbsp;+&nbsp;&nbsp;</h2></b>
-              <img alt={props.companyName} height="115" src={props.imgSrc}></img>
+              <Image alt={props.companyName} height="115" src={props.imgSrc}></Image>
             </div>
           </div>
         </div>
@@ -74,7 +75,7 @@ export const SingleUserStory = (props: {
             <div className="col-lg-4 d-lg-none mt-4">
               <div className="download text-center border-top pt-4">
                 <div className="image pb-3">
-                  <img src={props.downloadFileImgSrc} alt="Download File" className="img-fluid"></img>
+                  <Image src={props.downloadFileImgSrc} alt="Download File" className="img-fluid"></Image>
                 </div>
                 <Link href={props.downloadFileURL} rel="noopener noreferrer" target="_blank">
                   <div className="btn conan-blue-gradient-bg">

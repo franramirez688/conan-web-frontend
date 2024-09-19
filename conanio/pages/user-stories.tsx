@@ -1,6 +1,7 @@
 import React from 'react';
 import { ConanKitchenHeader, ConanFooter } from '@/components';
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from "next/image";
 
 interface UserStory {
     title: string,
@@ -18,7 +19,7 @@ const UserStoryCards = (props: { data: UserStory[] }) => (
           <Link href={info.url}>
             <div className="single-user-story">
               <div className="image p-3 d-flex justify-content-center align-items-center bg-bright-gray" style={{height:"200px"}}>
-                <img src={info.imgSrc} alt={info.title} className="w-auto mh-100 h-auto"></img>
+                <Image src={info.imgSrc} alt={info.title} className="w-auto mh-100 h-auto"></Image>
               </div>
               <div className="title text-center bg-bright-blue p-2 d-flex justify-content-center align-items-center">
                 <span className="text-white">{info.title}</span>

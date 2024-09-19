@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ConanKitchenHeader, ConanFooter } from '@/components';
 import {
   FcWorkflow,
@@ -28,7 +29,7 @@ const WhyConan = () => (
 
       <div className="flex-wrapper">
         <ConanKitchenHeader/>
-        <img src="/conan-cubes.svg" className="d-none d-lg-block position-absolute hero-bg" alt="Conan C++ Package Manager"></img>
+        <Image fill src="/conan-cubes.svg" className="d-none d-lg-block position-absolute hero-bg" alt="Conan C++ Package Manager"></Image>
           <section className="pt-mt-4">
             <Container className="conancontainer mt-4 mb-4">
             <h1 className="text-center black">Why adopt Conan in your C++ workflows</h1>
@@ -96,7 +97,7 @@ const WhyConan = () => (
               </Col>
             </Row>
             </Container>
-            <img src="conan-single-cube.svg" className="d-none d-lg-block position-absolute" style={{right: 0}}></img>
+            <Image fill src="/conan-single-cube.svg" className="d-none d-lg-block position-absolute" style={{right: 0}}></Image>
           </section>
           <section className="pb-5 mt-4">
             <Container className="conancontainer mt-4">

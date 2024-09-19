@@ -1,13 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import Slider from "react-slick";
 
 const ConanHomeHero = () => (
   <section id="hero" className="position-relative">
-    <img
+    <Image
+      fill
       src="/conan-cubes.svg"
       className="d-none d-lg-block position-absolute hero-bg"
       alt="Conan C++ Package Manager"
-    ></img>
+    ></Image>
 
     <Link href="#mktoForm_1479">
       <div className="btn conan-blue-gradient-bg position-fixed get-involved-btn ps-3 pe-3 d-none d-lg-block">
@@ -56,7 +58,7 @@ const ConanHomeHero = () => (
           </div>
         </div>
         <div className="col-3">
-          <img src="/jfrog-mascot.svg"></img>
+          <Image fill src="/jfrog-mascot.svg"></Image>
         </div>
       </div>
     </div>
@@ -122,11 +124,12 @@ const ConanHomeAdvantages = () => (
           </div>
         </div>
       </div>
-      <img
+      <Image
+        fill
         src="conan-single-cube.svg"
         className="d-none d-lg-block position-absolute"
         style={{ right: 0 }}
-      ></img>
+      ></Image>
       <div className="row d-flex py-md-5 align-items-stretch text-center">
         <Link href="https://docs.conan.io/2/introduction.html">
           <div className="learn-more-ce-link" id="learn_more_btn_middle">
@@ -143,7 +146,7 @@ const ConanHomePlaces = () => (
     <div className="container py-5">
       <div className="row d-flex justify-content-center pb-5">
         <div className="col-md-auto py-3 d-flex justify-content-center">
-          <img src="/artifactory-logo.svg"></img>
+          <Image fill src="/artifactory-logo.svg"></Image>
         </div>
         <div className="col-8 col-md-6 text-left places-wrapper">
           <h4 className="fw-bold">
@@ -171,7 +174,7 @@ const ConanHomePlaces = () => (
       </div>
       <div className="row d-flex justify-content-center mt-5">
         <div className="col-md-auto py-3 d-flex justify-content-center">
-          <img src="/conancenter-logo.svg"></img>
+          <Image fill src="/conancenter-logo.svg"></Image>
         </div>
         <div className="col-8 col-md-6 text-left places-wrapper">
           <h4 className="fw-bold">
@@ -208,7 +211,7 @@ const ConanHomeTribe = () => (
     <div className="container py-4">
       <div className="row d-inline d-lg-none">
         <div className="col-12 d-flex justify-content-center">
-          <img src="/tribe-banner.svg" alt="Meet The Tribe"></img>
+          <Image fill src="/tribe-banner.svg" alt="Meet The Tribe"></Image>
         </div>
       </div>
       <div className="row d-inline d-lg-none">
@@ -235,7 +238,7 @@ const ConanHomeTribe = () => (
       </div>
       <div className="row d-flex justify-content-around">
         <div className="col-4 d-none d-lg-inline">
-          <img src="/tribe-banner.svg" alt="Meet The Tribe"></img>
+          <Image fill src="/tribe-banner.svg" alt="Meet The Tribe"></Image>
         </div>
         <div className="col-5 d-none d-lg-inline">
           <h2 className="text-uppercase text-center text-lg-left">
@@ -323,10 +326,11 @@ const ConanHomeCustomerSuccess = () => (
                       </Link>
                     </div>
                     <div className="col-4 pe-5">
-                      <img
+                      <Image
+                        fill
                         className="success-icon-bg mx-auto"
-                        src="https://media.jfrog.com/wp-content/uploads/2022/04/20102313/tomtom-page1.png"
-                      ></img>
+                        src="/user-stories/tomtom-page1.png"
+                      ></Image>
                     </div>
                   </div>
                 </div>
@@ -352,10 +356,11 @@ const ConanHomeCustomerSuccess = () => (
                       </Link>
                     </div>
                     <div className="col-4 pe-5">
-                      <img
+                      <Image
+                        fill
                         className="success-icon-bg mx-auto"
-                        src="https://media.jfrog.com/wp-content/uploads/2021/09/02140348/conan-rti-pdf-cover.png"
-                      ></img>
+                        src="/user-stories/conan-rti-pdf-cover.png"
+                      ></Image>
                     </div>
                   </div>
                 </div>
@@ -380,39 +385,41 @@ const ConanHomeUsers = () => (
       <div className="row">
         <div className="col-12 users-flex d-flex justify-content-center align-content-center">
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img className="" src="/brands/company_29.png" alt="Poco"></img>
+            <Image fill className="" src="/brands/company_29.png" alt="Poco"></Image>
           </div>
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img className="" src="/brands/company_28.png" alt="Pix4D"></img>
+            <Image fill className="" src="/brands/company_28.png" alt="Pix4D"></Image>
           </div>
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img className="" src="/brands/company_26.png" alt="Keysight"></img>
+            <Image fill className="" src="/brands/company_26.png" alt="Keysight"></Image>
           </div>
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img
+            <Image
+              fill
               className=""
               src="/brands/company_25.png"
               alt="Microblink"
-            ></img>
+            ></Image>
           </div>
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img
+            <Image
+              fill
               className=""
               src="/brands/company_32.png"
               alt="Mercedes Benz"
-            ></img>
+            ></Image>
           </div>
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img className="" src="/brands/company_33.png" alt="Melexis"></img>
+            <Image fill className="" src="/brands/company_33.png" alt="Melexis"></Image>
           </div>
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img className="" src="/brands/company_34.png" alt="OpenROV"></img>
+            <Image fill className="" src="/brands/company_34.png" alt="OpenROV"></Image>
           </div>
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img className="" src="/brands/company_30.png" alt="Arxan"></img>
+            <Image fill className="" src="/brands/company_30.png" alt="Arxan"></Image>
           </div>
           <div className="user-box d-flex justify-content-center align-content-center conan-card">
-            <img className="" src="/brands/company_31.png" alt="Plex"></img>
+            <Image fill className="" src="/brands/company_31.png" alt="Plex"></Image>
           </div>
         </div>
       </div>
@@ -432,11 +439,12 @@ const ConanHomeUsersVoices = () => (
                   <div className="inner row">
                     <div className="col-12">
                       <div className="text-center company-logo">
-                        <img
+                        <Image
+                          fill
                           src="/brands/company_41.png"
                           alt="TomTom"
                           className="mx-auto"
-                        ></img>
+                        ></Image>
                       </div>
                       <p className="text text-center mx-auto company-quote">
                         We started to see that we could speed up our development
@@ -446,11 +454,12 @@ const ConanHomeUsersVoices = () => (
                       </p>
                       <div className="quote d-flex align-items-center justify-content-center my-3">
                         <span className="line"></span>
-                        <img
+                        <Image
+                          fill
                           src="/white-quote.svg"
                           alt=""
                           className="quote-image mx-2"
-                        ></img>
+                        ></Image>
                         <span className="line"></span>
                       </div>
                       <div className="name text-center">
@@ -467,11 +476,12 @@ const ConanHomeUsersVoices = () => (
                   <div className="inner row">
                     <div className="col-12">
                       <div className="text-center company-logo logo-squared">
-                        <img
+                        <Image
+                          fill
                           src="social/github.svg"
                           alt="GitHub"
                           className="mx-auto"
-                        ></img>
+                        ></Image>
                       </div>
                       <p className="text text-center mx-auto company-quote">
                         Conan makes it easier for our many automotive GitHub
@@ -481,11 +491,12 @@ const ConanHomeUsersVoices = () => (
                       </p>
                       <div className="quote d-flex align-items-center justify-content-center my-3">
                         <span className="line"></span>
-                        <img
+                        <Image
+                          fill
                           src="/white-quote.svg"
                           alt=""
                           className="quote-image mx-2"
-                        ></img>
+                        ></Image>
                         <span className="line"></span>
                       </div>
                       <div className="name text-center">Johannes Nicolai</div>
@@ -499,11 +510,12 @@ const ConanHomeUsersVoices = () => (
                 <div className="testi">
                   <div className="inner">
                     <div className="text-center company-logo">
-                      <img
+                      <Image
+                        fill
                         className="mx-auto"
-                        src="logo/microblink.png"
+                        src="/logo/microblink.png"
                         alt="microblink"
-                      ></img>
+                      ></Image>
                     </div>
                     <p className="text text-center company-quote mx-auto">
                       Conan integration enabled a 10x reduction in our
@@ -518,11 +530,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Nenad Mikša</div>
@@ -535,11 +548,12 @@ const ConanHomeUsersVoices = () => (
                 <div className="testi">
                   <div className="inner">
                     <div className="text-center company-logo logo-squared">
-                      <img
+                      <Image
+                        fill
                         className="mx-auto"
                         src="/brands/company_37.png"
                         alt="tanker"
-                      ></img>
+                      ></Image>
                     </div>
                     <p className="text text-center company-quote mx-auto">
                       I’ll simply say that I was a total n00b in build systems
@@ -549,11 +563,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Theo Delrieu</div>
@@ -566,11 +581,12 @@ const ConanHomeUsersVoices = () => (
                 <div className="testi">
                   <div className="inner">
                     <div className="text-center company-logo">
-                      <img
+                      <Image
+                        fill
                         className="mx-auto"
                         src="/our-users/disbelief.svg"
                         alt="disbelief"
-                      ></img>
+                      ></Image>
                     </div>
                     <p className="text text-center company-quote mx-auto">
                       Conan’s flexibility made it possible to do something that
@@ -579,11 +595,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Rene Rivera</div>
@@ -597,11 +614,12 @@ const ConanHomeUsersVoices = () => (
                 <div className="testi">
                   <div className="inner">
                     <div className="text-center company-logo">
-                      <img
+                      <Image
+                        fill
                         className="mx-auto"
                         src="/our-users/keysight.svg"
                         alt="keysight"
-                      ></img>
+                      ></Image>
                     </div>
                     <p className="text text-center company-quote mx-auto">
                       What is best in life? Crushing your build times, driving
@@ -610,11 +628,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Daniel Greidinger</div>
@@ -627,11 +646,12 @@ const ConanHomeUsersVoices = () => (
                 <div className="testi">
                   <div className="inner">
                     <div className="text-center company-logo">
-                      <img
+                      <Image
+                        fill
                         className="mx-auto"
                         src="/brands/company_32.png"
                         alt="Mercedes-Benz"
-                      ></img>
+                      ></Image>
                     </div>
                     <p className="text text-center company-quote mx-auto">
                       Conan has amplified our productivity, by minimizing the
@@ -641,11 +661,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Siva Mandadi</div>
@@ -658,11 +679,12 @@ const ConanHomeUsersVoices = () => (
                 <div className="testi">
                   <div className="inner">
                     <div className="text-center company-logo">
-                      <img
+                      <Image
+                        fill
                         className="mx-auto"
                         src="/our-users/melexis.svg"
                         alt="melexis"
-                      ></img>
+                      ></Image>
                     </div>
                     <p className="text text-center company-quote mx-auto">
                       Conan brings C++ development and dependency management
@@ -675,11 +697,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Peter Tillemans</div>
@@ -691,11 +714,12 @@ const ConanHomeUsersVoices = () => (
 
                 <div className="testi">
                   <div className="text-center company-logo">
-                    <img
+                    <Image
+                      fill
                       className="mx-auto"
                       src="/our-users/arxan.svg"
                       alt="arxan"
-                    ></img>
+                    ></Image>
                   </div>
                   <div className="inner">
                     <p className="text text-center company-quote mx-auto">
@@ -705,11 +729,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Derian Reuss</div>
@@ -721,11 +746,12 @@ const ConanHomeUsersVoices = () => (
 
                 <div className="testi">
                   <div className="text-center company-logo">
-                    <img
+                    <Image
+                      fill
                       className="mx-auto"
-                      src="logo/pix4d.png"
+                      src="/logo/pix4d.png"
                       alt="pix4d"
-                    ></img>
+                    ></Image>
                   </div>
                   <div className="inner">
                     <p className="text text-center company-quote mx-auto">
@@ -743,11 +769,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Luis Díaz Más</div>
@@ -760,11 +787,12 @@ const ConanHomeUsersVoices = () => (
                 <div className="testi">
                   <div className="inner">
                     <div className="text-center company-logo">
-                      <img
+                      <Image
+                        fill
                         className="mx-auto"
                         src="/our-users/appsanywhere.svg"
                         alt="appsanywhere"
-                      ></img>
+                      ></Image>
                     </div>
                     <p className="text text-center company-quote mx-auto">
                       Conan arrived just in time to enable us to test multiple
@@ -777,11 +805,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Gerald R. Wiltse</div>
@@ -794,11 +823,12 @@ const ConanHomeUsersVoices = () => (
                 <div className="testi">
                   <div className="inner">
                     <div className="text-center company-logo">
-                      <img
+                      <Image
+                        fill
                         className="mx-auto"
-                        src="logo/imazen.png"
+                        src="/logo/imazen.png"
                         alt="imazen"
-                      ></img>
+                      ></Image>
                     </div>
                     <p className="text text-center company-quote mx-auto">
                       Conan has been a lifesaver in managing cross-platform
@@ -809,11 +839,12 @@ const ConanHomeUsersVoices = () => (
                     </p>
                     <div className="quote d-flex align-items-center justify-content-center my-3">
                       <span className="line"></span>
-                      <img
+                      <Image
+                        fill
                         src="/white-quote.svg"
                         alt=""
                         className="quote-image mx-2"
-                      ></img>
+                      ></Image>
                       <span className="line"></span>
                     </div>
                     <div className="name text-center">Nathanael Jones</div>

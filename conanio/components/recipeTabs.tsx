@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BiSolidInfoCircle } from "react-icons/bi";
 import { MdOutlineCheckCircleOutline, MdOutlineToday } from "react-icons/md";
 import { PiWarningBold } from "react-icons/pi";
@@ -38,7 +39,7 @@ export const BadgesTab = ({recipeName}: {recipeName: string}) => {
 
   return (
     <div className="mb-4">
-      <img src={"https://img.shields.io/conan/v/" + recipeName} alt="Conan Center"></img>
+      <Image src={"https://img.shields.io/conan/v/" + recipeName} alt="Conan Center"></Image>
       <br/><br/>
       <Tabs className="package-tabs" defaultActiveKey="Markdown" id="badges-uncontrolled">
         <Tab eventKey="Markdown" title="Markdown">

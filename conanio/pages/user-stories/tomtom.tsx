@@ -13,7 +13,7 @@ const UserStoriesTomtomPage = () => (
         pageTitle="Reducing Multi-Architecture Build Times for Navigation Devices with Conan and Artifactory"
         imgSrc="/user-stories/tomtom-s.png"
         downloadFileURL="https://media.jfrog.com/wp-content/uploads/2022/04/21101854/TomTom-and-Conan-Use-Case.pdf"
-        downloadFileImgSrc="https://media.jfrog.com/wp-content/uploads/2022/04/20102313/tomtom-page1.png"
+        downloadFileImgSrc="/user-stories/tomtom-page1.png"
         contentHTML={
           <div>
             <p>

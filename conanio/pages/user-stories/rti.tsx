@@ -14,7 +14,7 @@ function UserStoriesRTIPage() {
           pageTitle="Speeding Multi-Platform Releases for Industrial IoT with Conan and Artifactory"
           imgSrc="/user-stories/rti-s.png"
           downloadFileURL="https://media.jfrog.com/wp-content/uploads/2021/06/15183931/USE-CASE-RTI.pdf"
-          downloadFileImgSrc="https://media.jfrog.com/wp-content/uploads/2021/09/02140348/conan-rti-pdf-cover.png"
+          downloadFileImgSrc="/user-stories/conan-rti-pdf-cover.png"
           contentHTML={
             <div>
               <h2>Company</h2>

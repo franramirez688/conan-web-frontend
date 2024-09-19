@@ -2,6 +2,7 @@ import React from 'react';
 import { ConanKitchenHeader, ConanFooter } from '@/components';
 import { Tooltip } from 'react-tooltip';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BiInfoCircle } from "react-icons/bi";
 
 
@@ -55,7 +56,7 @@ interface DownloadInstallerOrCopyProps extends DownloadInstallerProps {
 
 const CopyToClipboard = (props: CopyToClipboardProps) => (
     <div className="package-wrapper d-flex flex-no-wrap">
-      <div className="cn-box small"><img alt={props.imageAlt} className="lazy" src={props.imageSrc}></img></div>
+      <div className="cn-box small"><Image alt={props.imageAlt} className="lazy" src={props.imageSrc}></Image></div>
       <div className="cn-box cn-main copy-text">{props.textToShow}</div>
       <a
         className="cn-box cn-action cn-copy"
@@ -73,7 +74,7 @@ const CopyToClipboard = (props: CopyToClipboardProps) => (
 
 const DownloadInstallerOrCopy = (props: DownloadInstallerOrCopyProps) => (
     <div className="package-wrapper d-flex flex-no-wrap">
-      <div className="cn-box small"><img alt={props.imageAlt} className="lazy" src={props.imageSrc}></img></div>
+      <div className="cn-box small"><Image alt={props.imageAlt} className="lazy" src={props.imageSrc}></Image></div>
       <div className="cn-box cn-main">{props.textToShow}</div>
       <div onClick={() => {gtmConanPushDownload(props.gtmProduct, props.gtmPlatforms, props.gtmDownloadDescription)}}>
         <Link href={props.installerLink}>
@@ -101,7 +102,7 @@ const DownloadInstallerOrCopy = (props: DownloadInstallerOrCopyProps) => (
 
 const DownloadInstaller = (props: DownloadInstallerProps) => (
     <div className="package-wrapper d-flex flex-no-wrap">
-      <div className="cn-box small"><img alt={props.imageAlt} className="lazy" src={props.imageSrc}></img></div>
+      <div className="cn-box small"><Image alt={props.imageAlt} className="lazy" src={props.imageSrc}></Image></div>
       <div className="cn-box cn-main">{props.textToShow}</div>
       <div onClick={() => {gtmConanPushDownload(props.gtmProduct, props.gtmPlatforms, props.gtmDownloadDescription)}}>
         <Link href={props.installerLink}>
@@ -129,9 +130,9 @@ const DownloadConanPackageManager = () => {
           <Tooltip id="download" />
           <Tooltip id="go-to-conan-github" />
           <Tooltip id="extra-info" />
-          <div className="small-title d-flex align-items-center"><img
+          <div className="small-title d-flex align-items-center"><Image
               alt="Downlod Conan Open Source C and C++ Package Manager" className="me-2 small-title-lazy"
-              src="/conan-downloads-logo.svg"></img></div>
+              src="/conan-downloads-logo.svg"></Image></div>
           <div className="text pb-1">
             <p className="py-3 front-text">Install the latest version ({conanReleaseVersion}) of the free and open Source Conan C and C++
               package manager, to start using Conan and downloading packages from the ConanCenter.</p>
@@ -197,7 +198,7 @@ const DownloadConanPackageManager = () => {
                 gtmCopyDescription="yay -S conan"
               />
               <div className="package-wrapper d-flex flex-no-wrap">
-                <div className="cn-box small"><img alt="Github" className="lazy" src="/downloads/github-small-pack.svg"></img></div>
+                <div className="cn-box small"><Image alt="Github" className="lazy" src="/downloads/github-small-pack.svg"></Image></div>
                 <div className="cn-box cn-main">Any OS:From Source</div>
                 <div onClick={() => {gtmConanPush('link', 'conan', 'github', 'get conan', 'any os from source');}}>
                   <Link href="https://github.com/conan-io/conan">
@@ -297,9 +298,12 @@ const DownloadJFrogArtifactoryCommunityEditionForCpp = () => {
         <div className="content px-2 px-md-4 py-2 p-md-4">
           <Tooltip id="copy-to-clipboard" />
           <Tooltip id="download" />
-          <div className="small-title d-flex align-items-center"><img
+          <div className="small-title d-flex align-items-center">
+              <Image
               alt="Downlod JFrog Artifactory Community Edition for C and C++" className="me-2 lazy"
-              src="/jfrog-artifactory-ce-download-banner.svg"></img></div>
+              src="/jfrog-artifactory-ce-download-banner.svg">
+              </Image>
+          </div>
           <div className="text pb-1">
             <p className="py-3 front-text">Download the latest version of JFrog Artifactory Community Edition to host
               your own private packages on your own server - for free.</p>
@@ -408,7 +412,7 @@ const DownloadsPage = () => (
         <ConanKitchenHeader/>
         <section className="downloads-hero position-relative pb-5" id="downloadsHero">
 
-          <img src="/conan-cubes.svg" className="position-absolute hero-bg" alt="Conan C++ Package Manager"></img>
+          <Image fill src="/conan-cubes.svg" className="position-absolute hero-bg" alt="Conan C++ Package Manager"></Image>
 
           <div className="container">
             <div className="row">
@@ -429,13 +433,13 @@ const DownloadsPage = () => (
                 <h2 className="fw-bold pb-3">Questions about Installation?</h2>
                 <p>Check the Docs, contact the community on Slack, or ask for support in Github</p>
                 <div className="d-flex justify-content-center mt-4"><a className="q-box d-block" href="https://docs.conan.io/">
-                    <div className="q-top"><img alt="Docs" src="/docs.svg"></img></div>
+                    <div className="q-top"><Image alt="Docs" src="/docs.svg"></Image></div>
                     <div className="q-title text-center mt-1">Docs</div>
                   </a><a className="q-box d-block" href="https://cpplang.slack.com/?id=conan">
-                    <div className="q-top"><img alt="Docs" src="/social/slack.svg"></img></div>
+                    <div className="q-top"><Image fill alt="Docs" src="/social/slack.svg"></Image></div>
                     <div className="q-title text-center mt-1">Slack</div>
                   </a><a className="q-box d-block" href="https://github.com/conan-io/conan/issues" rel="nofollow">
-                    <div className="q-top"><img alt="Docs" src="/social/github.svg"></img></div>
+                    <div className="q-top"><Image fill alt="Docs" src="/social/github.svg"></Image></div>
                     <div className="q-title text-center mt-1">Github</div>
                   </a></div>
               </div>

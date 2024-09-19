@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from "next/router";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -48,7 +49,7 @@ export function ConanHeader(props: {background?: string}){
       <div className="container">
         <div className="row d-flex justify-content-between">
           <Link href="/" onClick={() => {gtmConanPush('conan logo')}} className="col-6 col-lg-4 d-block">
-            <img alt="Conan C++ Package Manager" className="header-logo" style={{maxHeight: "83px"}} src="/conan-logo.png"></img>
+            <Image fill alt="Conan C++ Package Manager" className="header-logo" style={{maxHeight: "83px"}} src="/conan-logo.png"></Image>
           </Link>
           <div className="col-6 col-lg-4 xs text-right d-flex align-items-center justify-content-end">
             <Navbar collapseOnSelect expand="lg">
@@ -59,7 +60,7 @@ export function ConanHeader(props: {background?: string}){
                       <Nav.Link onClick={() => {gtmConanPush('faq')}} href="/faq"><span className="btn navBtn black">FAQ</span></Nav.Link>
                       <Nav.Link onClick={() => {gtmConanPush('docs')}} href="https://docs.conan.io/"><span className="btn navBtn black">Docs</span></Nav.Link>
                       <Nav.Link onClick={() => {gtmConanPush('blog')}} href="https://blog.conan.io/"><span className="btn navBtn black">Blog</span></Nav.Link>
-                      <Nav.Link onClick={() => {gtmConanPush('github')}} href="https://github.com/conan-io/conan" rel="nofollow noopener noreferrer" target="_blank"><span className="btn p-0 me-3"><img style={{maxHeight: "26px"}} src="/small-github.png" alt="Github"></img></span></Nav.Link>
+                      <Nav.Link onClick={() => {gtmConanPush('github')}} href="https://github.com/conan-io/conan" rel="nofollow noopener noreferrer" target="_blank"><span className="btn p-0 me-3"><Image fill style={{maxHeight: "26px"}} src="/small-github.png" alt="Github"></Image></span></Nav.Link>
                       <div className="downloads-cta arrow-cta">
                         <div className="button_cont">
                           <Nav.Link onClick={() => {gtmConanPush('downloads')}} href="/downloads"><span className="btn conan-blue-gradient-bg white fw-bold" id="download_btn_header"><span>Downloads</span></span></Nav.Link>
@@ -90,7 +91,7 @@ export const ConanKitchenHeader = (props: {titlePrefix?: string}) => {
   return (
     <div>
       <ConanHead titlePrefix={props.titlePrefix}/>
-      <div className="header-bg position-absolute"><img src="/kitchen-bg.svg" alt="" width="100%"></img></div>
+      <div className="header-bg position-absolute"><Image fill src="/kitchen-bg.svg" alt=""></Image></div>
       <ConanHeader/>
     </div>
   );

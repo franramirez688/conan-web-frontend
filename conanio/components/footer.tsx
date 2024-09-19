@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from 'next/link';
+import Image from 'next/image';
 import { MarketoForm, MarketoProps } from "@/components";
 
 
@@ -120,17 +121,17 @@ export const ConanFooter = () => {
             <ul className="socials d-flex mt-1 mb-0 pt-2 ps-0 justify-content-center list-unstyled">
               <li>
                 <a onClick={() => {gtmConanPushSocial('x')}} className="me-2" href="https://x.com/conan_io">
-                  <img alt="x" className="lazy" src="/social/x.svg"></img>
+                  <Image fill alt="x" className="lazy" src="/social/x.svg"></Image>
                 </a>
               </li>
               <li>
                 <a onClick={() => {gtmConanPushSocial('slack')}} className="me-2" href="https://cpplang.slack.com/?id=conan">
-                  <img alt="slack" className="lazy" src="/social/slack.svg"></img>
+                  <Image fill alt="slack" className="lazy" src="/social/slack.svg"></Image>
                 </a>
               </li>
               <li>
                 <a onClick={() => {gtmConanPushSocial('github')}} className="me-2" href="https://github.com/conan-io">
-                  <img alt="github" className="lazy" src="/social/github.svg" style={{filter: 'invert(100%)'}}></img>
+                  <Image fill alt="github" className="lazy" src="/social/github.svg" style={{filter: 'invert(100%)'}}></Image>
                 </a>
               </li>
             </ul>
